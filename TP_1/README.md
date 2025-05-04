@@ -11,7 +11,7 @@ que recibe minimoun parametro de tipo cadena, y que retorna un entero
 Diferencias entre hello3.c y hello3.i: es igual solo que arriba del .i se agregan
 #0 "hello3.c"0 "built-in"0 "command-line"1 "hello3.c
 
-# 2. Compilacion
+# 2. Compilación
 
 Para parar despues de la compilacion se usa: gcc -S archivo.c -o archivo.s
 
@@ -20,15 +20,27 @@ y una vez realizado se llama a 'main'. Se ejecuta 'main', llamando a printf, y a
 
 Para parar despues de ensamblar se usa: gcc -c archivo.c -o archivo.o
 
-# 3. Vinculacion
+# 3. Vinculación
 
 Para parar despues de vincular se usa: gcc archivo.o -o ejecutable
 
 Cuando genero el ejecutable de hello4, el programa me imprime un valor inconsistente.
 Aunque no incluya la libreria, el compilador reconoce 'printf'
 
-# 4. Correccion del bug
+# 4. Corrección del bug
 
 Una vez generado el ejecutable, con poner './ejecutable', se ejecutara normalmente
 
 Una vez añadimos lo que queremos imprimir, ya no imprimirá valores inconsistentes por pantalla
+
+# 5. Remoción del tipo
+
+En este caso a mi me tiro primero un 'warning' de que no habia declarado 'printf', y posteriormente
+me saltó un error diciendome como pista que incluya 'stdio.h' o que le provea una declaracion de 'printf'
+
+Un prototipo de una funcion es una declaracion de funcion que le indica cuantos parametros recibe, de que
+tipo son esos parametros, y que retorna
+
+Una declaracion impicita es cuando llamamos a una funcion que no esta declarada en ninguna parte del codigo
+
+Una funcion 'built in' es aquella que ya viene incorparada cuando instalamos el lenguaje de programacion
