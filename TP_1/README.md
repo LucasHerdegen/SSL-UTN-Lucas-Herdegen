@@ -9,4 +9,13 @@ La semantica de 'int printf(const char * restrict s, ...);', es que es el protot
 que recibe minimoun parametro de tipo cadena, y que retorna un entero
 
 Diferencias entre hello3.c y hello3.i: es igual solo que arriba del .i se agregan
-#0 "hello3.c"0 "<built-in>"0 "<command-line>"1 "hello3.c
+#0 "hello3.c"0 "built-in"0 "command-line"1 "hello3.c
+
+# 2. Compilacion
+
+Para parar despues de la compilacion se usa: gcc -S archivo.c -o archivo.s
+
+En el codigo assembler, primero se hacen los preparativos antes de llamar a la funcion principal,
+y una vez realizado se llama a 'main'. Se ejecuta 'main', llamando a printf, y al final retorna
+
+Para parar despues de ensamblar se usa: gcc -c archivo.c -o archivo.o
