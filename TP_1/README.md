@@ -19,3 +19,10 @@ En el codigo assembler, primero se hacen los preparativos antes de llamar a la f
 y una vez realizado se llama a 'main'. Se ejecuta 'main', llamando a printf, y al final retorna
 
 Para parar despues de ensamblar se usa: gcc -c archivo.c -o archivo.o
+
+# 3. Vinculacion
+
+Para parar despues de vincular se usa: gcc archivo.o -o ejecutable
+
+Cuando genero el ejecutable de hello4, el programa me imprime un valor inconsistente.
+Aunque no incluya la libreria, el compilador reconoce 'printf'
