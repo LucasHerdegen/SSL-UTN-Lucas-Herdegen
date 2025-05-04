@@ -1,0 +1,12 @@
+# 1. Preprocesador
+
+Para solo preprocesar se usa: gcc -E archivo.c -o archivo.i
+
+Conclusiones de hello2: el .i a diferencia del .c remueve comentarios y los reemplaza por un espacio, y hace un copia
+y pega de la biblioteca que incluimos
+
+La semantica de 'int printf(const char * restrict s, ...);', es que es el prototipo de una funcion llamada printf,
+que recibe minimoun parametro de tipo cadena, y que retorna un entero
+
+Diferencias entre hello3.c y hello3.i: es igual solo que arriba del .i se agregan
+#0 "hello3.c"0 "<built-in>"0 "<command-line>"1 "hello3.c
