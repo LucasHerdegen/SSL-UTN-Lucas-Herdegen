@@ -26,3 +26,9 @@ Para parar despues de vincular se usa: gcc archivo.o -o ejecutable
 
 Cuando genero el ejecutable de hello4, el programa me imprime un valor inconsistente.
 Aunque no incluya la libreria, el compilador reconoce 'printf'
+
+# 4. Correccion del bug
+
+Una vez generado el ejecutable, con poner './ejecutable', se ejecutara normalmente
+
+Una vez añadimos lo que queremos imprimir, ya no imprimirá valores inconsistentes por pantalla
